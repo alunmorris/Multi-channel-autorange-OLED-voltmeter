@@ -16,7 +16,7 @@ The MPU ADC (10-bit) reads voltage data from 4 channels and shows them on an OLE
 
 Features:
 * 0-27V range. 1mV resolution for V<1V.
-* 3.3-12V supply.
+* 3.3-12V supply. Reverse polarity protection.
 * Accuracy c.1% (can be improved by calibration). May deteriorate - depends on resistor quality.
 * Temperature variation is mostly dependent on the resistors. The MPU ADC is +/-0.1% over 0 to 40C. 
 * Positive voltage only. Over voltage indication. +/-100V input tolerant.
