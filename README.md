@@ -16,10 +16,11 @@ The MPU ADC (10-bit) reads voltage data from 4 channels and shows them on an OLE
 
 Features:
 * 0-27V range. 1mV resolution for V<1V.
+* 3.3-12V supply.
 * Accuracy c.1% (can be improved by calibration). May deteriorate - depends on resistor quality.
 * Temperature variation is mostly dependent on the resistors. The MPU ADC is +/-0.1% over 0 to 40C. 
 * Positive voltage only. Over voltage indication. +/-100V input tolerant.
-* 1.1Mohm input impedance.
+* 1.1Mohm input impedance
 * Sample rate c.10/s, configurable
 
 ### Display operation
@@ -40,4 +41,6 @@ In eeschema/Kicad .sch format.
 
 **Programming** is via the OLED/UPDI header. The OLED is unplagged and a custom 1.27mm pitch UPDI cable is used. 
 
-**Construction** on a 1.27mm pitch prototyping PCB. using SMD components, apart from the two headers.
+**Construction** on a 1.27mm pitch prototyping PCB. using SMD components, apart from the two headers. The 4 pin 2.54mm header is removed from a standard 72x40 0.42in OLED module and replaced with a 7 pin 1.27mm male header wich has pins 2, 3 and 5 removed so that it goes through the same holes.
+Another 1 pin header is soldered to one of the mounting holed on the module. This is simply for rigidity.
+A turned pin (instead of the cheaper square pin) header is used for the 6-pin power and signal inputs, for easier insertion into a breadboard.
