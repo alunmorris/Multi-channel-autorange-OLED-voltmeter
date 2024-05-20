@@ -28,10 +28,7 @@ Features:
 ## Repository overview
 The repositry contains C++ code for the Arduino IDE and a circuit diagrams.
 
-Code been complied on Arduino 2.3.2.
-
-### Transmitter code
-One .ino file. Uses U8g2lib, Wire and stdlib libraries.
+Code been complied on Arduino 2.3.2. Uses U8g2lib, Wire and stdlib libraries.
 
 Compiled to 11593 bytes program and 379 bytes of RAM with Board Manager megaTinyCore version 2.2.9 (the latest as at 17 May 2024)
 
