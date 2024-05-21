@@ -43,11 +43,11 @@ Taking VIN1 for example, PA3 is floating in normal range but is set to logic L i
 
 **Programming** is via the OLED/UPDI header. The OLED is unplagged and a custom 1.27mm pitch UPDI cable is used. 
 
-**Construction** on a 1.27mm pitch prototyping PCB. using SMD components, apart from the two headers. The 4 pin 2.54mm header is removed from a standard 72x40 0.42in OLED module and replaced with a 7 pin 1.27mm male header wich has pins 2, 3 and 5 removed so that it goes through the same holes.
-Another 1 pin header is soldered to one of the mounting holed on the module. This is simply for rigidity.
+**Construction** on a 1.27mm pitch prototyping PCB. using SMD components, apart from the two headers. I removed the 4 pin 2.54mm header from a standard 72x40 0.42in OLED module and replaced with a 7 pin 1.27mm male header with pins 2, 3 and 5 removed so that it goes through the same holes.
+Another 1 pin header is soldered to one of the mounting holes on the module. This plugs into a small female header on the MPU board, for rigidity.
 A turned pin (instead of the common square pin) header is used for the 6-pin power and signal inputs, for easier insertion into a breadboard.
 
 **Possible improvements** 
-1. Connect the 30pF capacitors to the junction of 1Mohm/100k resistors.
+1. Connect the 30pF capacitors to the junction of 1Mohm/100k resistors. This would improve noise reduction in high range. Note that noise is lower on high range in any event due to the lower impedance at the ADC pin.
 2. Make the input impedance a constant 1.1Mohm. The present cicruit changes the input impedance in high range (Vin>2.5V). The 100k resistors would be tied to ground and two analog inputs used for each Vin channel. Normal range inputs would need an extra 1Mohm resisitor as input protection. The SDA or SCL pin would need to be moved to one of PB2 or PB3 pins to allow 8 analog input pins. SW I2C would have to be used.
-3. Use a larger display. I used a 0.42in OLED to make to voltemter as small as possible. The logic level readout uses a tiny font as a result.
+3. Use a larger display. I used a 0.42in OLED to make the voltemter as small as possible. The logic level readout needs a tiny font as a result.
