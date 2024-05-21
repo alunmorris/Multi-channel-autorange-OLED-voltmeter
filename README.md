@@ -42,6 +42,8 @@ Compiled to 11593 bytes program and 379 bytes of RAM with Board Manager megaTiny
 ### Circuit diagrams
 In eeschema/Kicad .sch format.
 
+![Four-channel-OLED-voltmeter](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/72b6e7c1-ed9d-4c7e-8ad1-f4040416877c)
+
 **How it works**
 
 **Vin1-4** Each input is read directly (normal range) or divided by 11 by resistors (high range) in which case 27V becomes 2.5V at the MPU pin.
