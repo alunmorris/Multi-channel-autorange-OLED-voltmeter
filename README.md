@@ -39,7 +39,7 @@ In eeschema/Kicad .sch format.
 **How it works**
 
 **Vin1-4** Each input is read directly (normal range) or divided by 11 by resistors (high range) in which case 27V becomes 2.5V at the MPU pin.
-Taking VIN1 for example, PA3 is floating in normal range but is set to logic L in high range, creating the potential divider. The ADC reference voltages are 0.55V, 1.1V and 2.5V. Noise is reduced by 30pF capacitors which are connected to floating/logic L end of the 100k resistors for ease of layout.
+Taking VIN1 for example, PA3 is floating in normal range but is set to logic L in high range, creating a potential divider. The ADC reference voltages are 0.55V, 1.1V and 2.5V. Noise is reduced by 30pF capacitors which are connected to floating/logic L end of the 100k resistors for ease of layout.
 
 **Programming** is via the OLED/UPDI header. The OLED is unplagged and a custom 1.27mm pitch UPDI cable is used. 
 
