@@ -1,7 +1,10 @@
 # Multi-channel-autorange-OLED-voltmeter
 A 4-channel 0 to 27V voltmeter with tiny OLED display. Uses ATTINY1614 MPU (could be 1604) and 72x40 0.42in I2C OLED module.
 Also shows inputs as TTL levels: 0, 1 or indeterminate.
-![multi-channel-voltmeter-1-crop-small](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/7df1000c-0d5b-4a13-bad2-d0d416420f52)
+
+![multi-channel-voltmeter-1-crop-smaller](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/249b5f1d-4014-4a00-bd19-23b4a5b1b42a)
+
+
 I did the project as an exercise in minimalism as well as being actually useful. Demo at https://youtu.be/wHfZQZPxzn4
 
 Developed on Arduino
@@ -10,7 +13,9 @@ Developed on Arduino
 * Size 18x21x11mm
 * Autoranges six levels for optimal accuracy
 * OLED unplugs, allowing the MPU to be programmed via the same header
-![multi-channel-voltmeter-5-small](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/8fc4034f-67da-494c-aa0c-4f8853ec47f2)
+
+![multi-channel-voltmeter-5-smaller](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/3fbe69d8-d6f0-4e4b-b7f5-889d0f148057)
+
 
 ## Function Overview
 The MPU ADC (10-bit) reads voltage data from 4 channels and shows them on an OLED display.
@@ -44,10 +49,13 @@ Taking VIN1 for example, PA3 is floating in normal range but is set to logic L i
 
 **Programming** is via the OLED/UPDI header. The OLED is unplagged and a custom 1.27mm pitch UPDI cable is used. 
 
-**Construction** 
+**Construction**
+
 ![multi-channel-voltmeter-2-small](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/1868fad7-b057-40a1-8313-594184f2765f) ![multi-channel-voltmeter-3-small](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/a3aee87b-8293-4396-891f-ee12c38c857d)
 Built on a 1.27mm pitch prototyping PCB. using SMD components, apart from the two headers. I removed the 4 pin 2.54mm header from a standard 72x40 0.42in OLED module and replaced with a 7 pin 1.27mm male header with pins 2, 3 and 5 removed so that it goes through the same holes.
+
 ![multi-channel-voltmeter-4-small](https://github.com/alunmorris/Multi-channel-autorange-OLED-voltmeter/assets/4630866/53c8bc0e-42db-4ccd-876c-d15efc19537f)
+
 Another 1 pin header is soldered to one of the mounting holes on the module. This plugs into a small female header on the MPU board, for rigidity.
 A turned pin (instead of the common square pin) header is used for the 6-pin power and signal inputs, for easier insertion into a breadboard.
 
